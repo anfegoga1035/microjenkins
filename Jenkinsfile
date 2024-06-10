@@ -40,8 +40,8 @@ pipeline {
                 to: "anfegoga1035@gmail.com",
                 from: "andres.gomez@est.iudigital.edu.co"
 =======
-                to: "andres.gomez@est.iudigital.edu.co",
-                from: "anfegoga1035@gmail.com"
+                to: "anfegoga1035@gmail.com",
+                from: "andres.gomez@est.iudigital.edu.co"
 >>>>>>> 22523720a019c49bdadc82cf8535d8b08f91ca2b
             )
         }
