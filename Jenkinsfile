@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([
-                            string(credentialsId: 'MONGO_URI', variable: 'MONGO_URI')
+                        string(credentialsId: 'MONGO_URI', variable: 'MONGO_URI')
                     ]) {
                         sh 'docker-compose up -d'
                     }
@@ -36,13 +36,8 @@ pipeline {
             emailext (
                 subject: "Status del build: ${currentBuild.currentResult}",
                 body: "Se ha completado el build. Puede detallar en: ${env.BUILD_URL}",
-<<<<<<< HEAD
                 to: "anfegoga1035@gmail.com",
                 from: "andres.gomez@est.iudigital.edu.co"
-=======
-                to: "anfegoga1035@gmail.com",
-                from: "andres.gomez@est.iudigital.edu.co"
->>>>>>> 22523720a019c49bdadc82cf8535d8b08f91ca2b
             )
         }
     }
